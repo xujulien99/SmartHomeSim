@@ -7,6 +7,8 @@ public class Pain{
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(() -> {
             JScrollPane scrollPane = new JScrollPane(new InsidePane());
+            scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+            scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
             scrollPane.getViewport().setPreferredSize(new Dimension(400, 400));
             JFrame frame = new JFrame("SOEN 343");
             frame.getContentPane().add(scrollPane);
