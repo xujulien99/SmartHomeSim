@@ -5,13 +5,23 @@ public class Room {
 	private final String name;
 	private final UUID id;
 	
+	//TO REMOVE
 	public Room() {
-		name = "Test room";
-		id = UUID.randomUUID();
-		left = null;
-		right = null;
-		top = null;
-		bottom = null;
+		this.name ="asdasdasd";
+		this.id = UUID.randomUUID();
+		this.left = null;
+		this.right = null;
+		this.top = null;
+		this.bottom = null;
+	}
+	
+	public Room(String name, Wall left, Wall right, Wall top, Wall bottom, UUID id) {
+		this.name = name;
+		this.left = left;
+		this.right = right;
+		this.top = top;
+		this.bottom = bottom;
+		this.id = id;
 	}
 	
 	public Wall getLeft() {
