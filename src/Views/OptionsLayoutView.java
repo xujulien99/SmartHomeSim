@@ -24,9 +24,9 @@ class Pain2 extends JFrame {
 class MyPanel extends JPanel {
 
     public MyPanel() {
-        JButton jrb1 = new JButton("Button1");
-        JButton jrb2 = new JButton("Button2");
-        JButton jrb3 = new JButton("Button3");
+        JButton jrb1 = new JButton("Select User Profile");
+        JButton jrb2 = new JButton("Select Location");
+        JButton jrb3 = new JButton("Enter Simulation");
         Box box1 = Box.createVerticalBox();
         box1.add(jrb1);
         box1.add(jrb2);

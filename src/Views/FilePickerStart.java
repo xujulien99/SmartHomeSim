@@ -29,10 +29,9 @@ public class FilePickerStart extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 HouseLayoutView pp = new HouseLayoutView();
                 Pain2 pp2 = new Pain2();
-
+                pp2.setSize(250,250);
                 pp.setVisible(true);
                 pp2.setVisible(true);
-
                 o.dispose();
             }
         });
