@@ -1,8 +1,9 @@
 
 public class WindowWall extends Wall{
-	private int amountOfWindows;
+	boolean windowOpen = false;
+	boolean windowObstructed = false;
 	
-	public int getAmountOfWindows() {
-		return amountOfWindows;
+	public WindowWall() {
+		super(WallType.WINDOWS);
 	}
 }

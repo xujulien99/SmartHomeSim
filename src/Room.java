@@ -9,10 +9,10 @@ public class Room {
 	public Room() {
 		this.name ="asdasdasd";
 		this.id = UUID.randomUUID();
-		this.left = null;
-		this.right = null;
-		this.top = null;
-		this.bottom = null;
+		this.left = new WindowWall();
+		this.right = new Wall();
+		this.top = new WindowWall();
+		this.bottom = new Wall();
 	}
 	
 	public Room(String name, Wall left, Wall right, Wall top, Wall bottom, UUID id) {

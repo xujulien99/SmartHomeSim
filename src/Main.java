@@ -5,6 +5,7 @@ import javax.swing.JScrollPane;
 
 public class Main{
     public static void main(String[] args) {
+    	java.awt.EventQueue.invokeLater(() -> {
             JScrollPane scrollPane = new JScrollPane(new HouseDrawer(new House()));
             scrollPane.getViewport().setPreferredSize(new Dimension(1000, 1000));
             JFrame frame = new JFrame("SOEN 343");
@@ -13,6 +14,7 @@ public class Main{
             frame.pack();
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
+    	});
     }
 }
 

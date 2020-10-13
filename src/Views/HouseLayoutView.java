@@ -9,7 +9,7 @@ class HouseLayoutView extends JFrame {
 
     // constructor
     HouseLayoutView() {
-        JScrollPane scrollPane = new JScrollPane(new InsidePane());
+        JScrollPane scrollPane = new JScrollPane(new JPanel());
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.getViewport().setPreferredSize(new Dimension(400, 400));

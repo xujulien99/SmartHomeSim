@@ -4,10 +4,8 @@ public class House {
 	ArrayList<Room> rooms = new ArrayList<Room>();
 	//TO REMOVE
 	public House() {
-		rooms.add(new Room());
-		rooms.add(new Room());
-		rooms.add(new Room());
-		System.out.println(rooms.size() + "asdfasdfasdf");
+		Room room2 = new Room();
+		rooms.add(room2);
 	}
 	
 	public House(String houseJson) {
